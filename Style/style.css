@@ -1,0 +1,70 @@
+html,
+
+body {
+	max-width: 100%;
+	overflow-x: hidden;
+	background-image: url(../Images/CoffeeBackground.jpg);
+	background-size: cover;
+    background-repeat: no-repeat;
+	height:100%;
+	width:100%;
+}
+
+#logo {
+	height: 100px;
+	width: auto;
+}
+
+#logo1 {
+	height: 70px;
+	width: auto;
+}
+
+#title {
+	font-family: georgia;
+	font-size: 60px;
+	text-align: left;
+	color: white; 
+}
+
+#title1 {
+	font-family: georgia;
+	font-size: 35px;
+	text-align: left;
+	color: white; 
+}
+
+#homecontent {
+	text-align: left;
+	color: black;
+	font-size: 25px;
+}
+
+	
+.container {
+	width: 70%;
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+.footer {
+    position: relative;
+    margin-bottom: 0px;
+    margin-top: 250px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+}
+
+.row {
+	padding: 5px;
+}
+
+.food{
+font-size:18px;
+}
+	
+
+p {
+	font-size: 25px;
+}
+
