@@ -1,0 +1,45 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Dynamic Quiz</title>
+</head>
+<body>
+<form id="quiz" name="quiz">
+	<script src="js/quiz.js"></script>
+	<br>
+	<input id = "button" type = "button" value = "done" onclick = "check();"> <hr />
+</form>
+<p id = "score"></p>
+</body>
+<script>
+function check(){
+	var qu1 = document.quiz.qu1.value;
+	var qu2 = document.quiz.qu2.value;
+	var qu3 = document.quiz.qu3.value;
+	var qu4 = document.quiz.qu4.value;
+	var qu5 = document.quiz.qu5.value;
+	var correct = 0;
+
+	if (qu1 == "a") {
+		correct++;
+	}
+	if (qu2 == "d") {
+		correct++;
+	}	
+	if (qu3 == "a") {
+		correct++;
+	}
+	if (qu4 == "b") {
+		correct++;
+	}	
+	if (qu5 == "d") {
+		correct++;
+	}
+
+	document.getElementById("score").innerHTML = "You got " + correct + " correct.";
+	}
+</script>
+<footer>
+  <a href="../../../index.html">Main</a>
+</footer>
+</html>	
