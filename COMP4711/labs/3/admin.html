@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Admin Page</title>
+	<p>Creat Quiz</P>
+
+</head>
+<body>
+
+
+<form id="form1">
+<textarea id="questionfield" placeholder="please enter the questions here">
+</textarea>
+
+<p>Answers</p>
+
+	<input name ="options" type="radio">
+	<input class ="optionboxs" type="text" id="option0" placeholder="Answer for q1">
+	<br>
+	
+	<input name ="options" type="radio"> 
+	<input class ="optionboxs" type="text" id="option1" placeholder="Answer for q2">
+	<br>
+	
+	<input name ="options" type="radio"> 
+	<input class ="optionboxs" type="text" id="option2" placeholder="Answer for q3">
+	<br>
+	
+	<input name ="options" type="radio"> 
+	<input class ="optionboxs" type="text" id="option3" placeholder="Answer for q4">
+	<br>	
+	
+</form>
+
+<button type="button" id="addButton" onclick="add()"> Add</button>
+<br>
+
+
+<div id="show_questions">
+	
+</div>
+<br>
+<br>
+<button type="button" id="saveuiz" onclick="save()"> Save </button>
+<button type="button" id="removeallquiz" onclick="removeall()"> remove all </button>
+
+
+
+
+</div>
+	
+<footer>
+	<script src="js/admin.js"></script>
+</footer>
+<form action="user.html">
+    <input type="submit" value="Go to Users" />
+</form>
+<br>
+<form action="https://xpgao.github.io/">
+    <input type="submit" value="Home Page" />
+</form>
+
+</body>
+</html>
