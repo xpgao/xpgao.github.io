@@ -97,7 +97,7 @@ function start_new_form() {
 		delete_questions.appendChild(deletetext)
 		let remove_all = document.createElement('button')
 		remove_all.setAttribute('type', 'button')
-		remove_all.setAttribute("onclick", "removeLocalStorage()")
+		remove_all.setAttribute("onclick", "removeall()")
 		let removetext = document.createTextNode("all delete")
 		remove_all.appendChild(removetext)
 		form1.appendChild(delete_questions)
@@ -141,7 +141,7 @@ function save() {
 	localStorage.setItem('quiz', jsonQuiz)
 }
 
-function removeLocalStorage() {
+function removeall() {
 	localStorage.clear()
 }
 
