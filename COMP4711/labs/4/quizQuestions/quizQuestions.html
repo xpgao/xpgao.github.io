@@ -1,0 +1,73 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Dynamic Quiz</title>
+</head>
+<body>
+<form id="quiz" name="quiz">
+	<script src="JS/quiz.js"></script>
+	<br>
+	<input id = "button" type = "button" value = "done" onclick = "check();"> <hr />
+</form>
+<p id = "score"></p>
+</body>
+<script>
+function check(){
+	var qu1 = document.quiz.qu1.value;
+	var qu2 = document.quiz.qu2.value;
+	var qu3 = document.quiz.qu3.value;
+	var qu4 = document.quiz.qu4.value;
+	var qu5 = document.quiz.qu5.value;
+	var qu6 = document.quiz.qu6.value;
+	var qu7 = document.quiz.qu7.value;
+	var qu8 = document.quiz.qu8.value;
+	var qu9 = document.quiz.qu9.value;
+	var qu10 = document.quiz.qu10.value;
+	var correct = 0;
+
+	if (qu1 == "a") {
+		correct++;
+	}
+	if (qu2 == "d") {
+		correct++;
+	}	
+	if (qu3 == "a") {
+		correct++;
+	}
+	if (qu4 == "b") {
+		correct++;
+	}	
+	if (qu5 == "d") {
+		correct++;
+	}
+	if (qu6 == "d") {
+		correct++;
+	}
+	if (qu7 == "a") {
+		correct++;
+	}
+	if (qu8 == "b") {
+		correct++;
+	}	
+	if (qu9 == "d") {
+		correct++;
+	}
+	if (qu10 == "d") {
+		correct++;
+	}
+	
+	
+
+	document.getElementById("score").innerHTML = "You got " + correct + " correct.";
+	}
+</script>
+<footer>
+	<form>
+	<input type="submit" value="Submit">
+	</form>
+  <form action="https://xpgao.github.io/">
+   
+    <input type="submit" value="Home Page" />
+</form>
+</footer>
+</html>	
