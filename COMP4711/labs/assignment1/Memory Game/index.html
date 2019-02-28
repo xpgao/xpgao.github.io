@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Assignment1</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+  
+
+       <div id="initialpage" class="firstpage">
+           <div class="title">Memory Game</div>
+			<p> This game challenges users to track a pattern as it rotates! This game is good for improving sense of direction.</P>
+        <button id="displayMatrix" class="outerButton " onclick="initialize()" >Play</button>
+    </div> 
+	<center>
+    <div id="container">  
+	<div  id="rotate" class="createMatrix"></div>
+      <div id="beginning" class="interrupt beginning">
+	  <p onclick="createMatrix()">Click Here</p>
+	  </div>
+      
+        <div id="resultScreen" class="interrupt resultScreen">
+            <div>
+				<p id="next" class="alert">Next</p>
+				<i class="innerButton" onclick="nextlevel()"></i>
+                <p id="fail" class="alert">GG</p>
+				<p id="end" class="alert">End</p>
+            </div>
+       </div>
+	   <br>
+	
+     <div> <button class="outerButton " onclick="alertbox()" >End Game</button></div>
+    <div>
+        <div id="points" class="points">Current Points : 0</div>
+        
+    </div>
+   
+</div> 
+</center>
+    
+   
+    <script src="js.js"></script>
+	 <audio id="sound" src="sounds/sound.ogg"></audio>
+</body>
+</html>
