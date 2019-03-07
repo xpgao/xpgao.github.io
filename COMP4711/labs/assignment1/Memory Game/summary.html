@@ -9,14 +9,20 @@
 </head>
 
 <body>
-<form action="/action_page.php">
-name: <input type="text" name="Name"><br>
+<form action="app.php" method="post">
+	<div id="myform">
+	</div>
+
 
 <input type="submit" value="Submit">
 </form>
 
 <div> <a href= "index.html"> <button type= "button" class="outerButton " >restart</button></a></div>
 
-	
+	<script>
+		console.log(localStorage.getItem("score"));
+		document.getElementById("myform").innerHTML= 'name: <input type="text" name="Name"><br><input type="hidden" name="score" value="' + localStorage.getItem("score")+'">'
+		
+	</script>
 </body>
 </html>

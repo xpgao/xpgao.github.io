@@ -171,6 +171,7 @@ function selectTiles(tile){
     
     if(x<0){
 		points -=1;
+		localStorage.setItem("score", points);
 		pointElement.innerHTML=`Current Points : ${points}`;
         failcounter=true;
         wrongAttempts--;
@@ -182,6 +183,7 @@ function selectTiles(tile){
     } else {
 		points += 1;
 		rightAttempts--;
+		localStorage.setItem("score", points);
         elementSeleted.querySelector('.backside').style.backgroundColor = "green";
    		pointElement.innerHTML=`Current Points : ${points}`;
         if(rightAttempts == 0){
